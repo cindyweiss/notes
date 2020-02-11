@@ -1,0 +1,28 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cindyweiss/notes.git"
+  },
+  "author": "cindy weiss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cindyweiss/notes/issues"
+  },
+  "homepage": "https://github.com/cindyweiss/notes#readme",
+  "dependencies": {
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "is-url": "^1.2.4",
+    "jest": "^25.1.0",
+    "jsdoc": "^3.6.3",
+    "minimist": "^1.2.0",
+    "superagent": "^5.2.1"
+  }
+}
