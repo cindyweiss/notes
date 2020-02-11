@@ -11,7 +11,7 @@ describe('Notes module', () => {
 
   it('execute() does nothing when the options are invalid', () => {
     const thisCommandWillFail = { command: { 'x': 'coconut' } };
-    const notes = new notes(thisCommandWillFail);
+    const notes = new Notes(thisCommandWillFail);
     notes.execute();
     expect(console.log).not.toHaveBeenCalled;
   });

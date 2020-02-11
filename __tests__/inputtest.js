@@ -1,4 +1,4 @@
-const Input = require(' ../lib/input.js');
+const Input = require('../lib/input.js');
 
 jest.mock('minimist');
 const minimist = require('minimist');
@@ -16,7 +16,7 @@ describe('Input module', () => {
 
   it('parseInput() returns a prperly formed object', () => {
     const options = new Input();
-    const command = options.parseImput({ a: 'this should succeed' });
+    const command = options.parseInput({ a: 'this should succeed' });
     expect(command.action).toBeDefined();
     expect(command.payload).toBeDefined();
   });
@@ -32,7 +32,7 @@ describe('Input module', () => {
     let options = new Input();
     // send the input an actual object, but make that object be empty
     options.command = {};
-    expect(options.valid()).toBeFalsey();
+    expect(options.valid()).toBeFalsy();
   });
 
 });
